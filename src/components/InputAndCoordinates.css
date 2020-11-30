@@ -1,0 +1,79 @@
+.coordinates {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: #fff;
+}
+input {
+    padding: 1.8rem 1rem 1.8rem 1rem;
+    width: 90%;
+    height: 4rem;
+    margin-bottom: 2rem;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    outline: none;
+    border: 1px solid transparent;
+}
+.res {
+    text-align: center;
+    width: 90%;
+    background-color: #fff;
+    padding: 0.4rem;
+    border-radius: 15px;
+    z-index: 10;
+    border: 1px solid #000;
+}
+.coord-title {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 0.8rem;
+}
+.coord-val {
+    font-size: 1.2rem;
+    color: hsl(0, 0%, 17%);
+    font-weight: bolder;
+}
+.box {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+form {
+    position: relative;
+    width: 90%;
+    max-width: 550px;
+}
+button{
+    height: 4rem;
+    width:10%;
+    min-width:50px ;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-image: url("../images/icon-arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+    outline: none;
+    position: absolute;
+    right: 0;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 800px) {
+    .res {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        transform: translateY(40px);
+        padding: 1rem;
+    }
+}
