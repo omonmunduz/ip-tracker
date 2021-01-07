@@ -1,6 +1,7 @@
 import './App.css';
 import InputAndCoordinates from './components/InputAndCoordinates';
 import IPProvider from './context/IPProvider';
+import Mapp from './components/Mapp';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <div className="search-box">
         <IPProvider>
           <InputAndCoordinates/>
+          <Mapp />
         </IPProvider>
       </div>
     </div>

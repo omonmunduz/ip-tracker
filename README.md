@@ -2,6 +2,11 @@
 
 ![Design preview for the IP Address Tracker coding challenge](./design/desktop-preview.jpg)
 
+# Tools
+    -React
+    -Leaflet
+    -IP Geolocation API by IPify
+
 # Front-end Style Guide
 
 ## Layout

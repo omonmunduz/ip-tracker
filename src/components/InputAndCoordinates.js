@@ -8,11 +8,11 @@ const InputAndCoordinates = () => {
 
     if(!error && !loading){
         const {ip, location, isp }  = geolocation;
-        const {country, city, timezone, postalCode} = location;
+        const {region, city, timezone, postalCode} = location;
 
         result = {
             ip,
-            loc:`${country} ${city} ${postalCode}`,
+            loc:`${city}, ${region}, ${postalCode}`,
             timezone,
             isp
         }

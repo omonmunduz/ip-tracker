@@ -1,4 +1,4 @@
-import {createContext, useContext, useState } from 'react';
+import {createContext, useContext, useState, useEffect } from 'react';
 
 const IPContext = createContext();
 
@@ -50,6 +50,10 @@ const initialValue = {
         initGeolocation();
         setValue('');
     };
+    useEffect(() => {
+        initGeolocation();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+      }, []);
 
     const contextValue =  {
         value,
